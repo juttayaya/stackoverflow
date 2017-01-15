@@ -7,6 +7,6 @@ import org.immutables.value.Value;
  * @author juttayaya
  */
 @Value.Immutable
-public interface BasicInterface {
+interface BasicInterface {
     String name();
 }

@@ -62,6 +62,7 @@
     <build>
         <resources>
             <resource>
+                <!-- Immutables creates source code in this directory -->
                 <directory>${project.build.directory}/generated-resources/annotations</directory>
             </resource>
         </resources>

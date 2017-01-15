@@ -7,6 +7,6 @@ import org.immutables.value.Value;
  * @author juttayaya
  */
 @Value.Immutable
-public abstract class BasicClass {
+abstract class BasicClass {
     abstract String name();
 }

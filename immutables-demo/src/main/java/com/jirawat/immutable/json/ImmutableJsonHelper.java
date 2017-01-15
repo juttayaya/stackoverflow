@@ -13,8 +13,8 @@ public final class ImmutableJsonHelper {
 
     private ImmutableJsonHelper() {}
 
-    public static String toJSON(final SimpleEvent moneyTransfer)
+    public static String toJSON(final Object obj)
     throws Exception {
-         return jsonObjectMapper.writeValueAsString(moneyTransfer);
+         return jsonObjectMapper.writeValueAsString(obj);
     }
 }

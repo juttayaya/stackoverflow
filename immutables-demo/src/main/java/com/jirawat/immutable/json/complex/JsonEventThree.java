@@ -1,6 +1,9 @@
 package com.jirawat.immutable.json.complex;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.immutables.value.Value;
+
+import java.util.Date;
 
 /**
  * User: juttayaya
@@ -9,6 +12,6 @@ import org.immutables.value.Value;
  */
 @Value.Immutable
 @JsonEventType
-public interface JsonEventThree {
-    String eventName();
+interface JsonEventThree extends JsonEvent {
+    @JsonProperty("dateMs") Date eventDate();
 }
